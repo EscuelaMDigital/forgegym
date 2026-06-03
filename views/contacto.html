@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con ForgeGym Madrid: Ubicación en Calle Industria 47, teléfono, email, formulario de contacto y respuestas a preguntas frecuentes sobre permanencia, tarifas y servicios.">
+    <title>Contacto y FAQ | ForgeGym Madrid</title>
+    <!-- CSS Stylesheet (Correct relative path) -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Fixed Navbar -->
+    <header class="header" id="main-header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo" id="nav-logo">
+                FORGE<span>GYM</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link" id="link-inicio">Inicio</a>
+                <a href="gimnasio.html" class="nav-link" id="link-gimnasio">El Gimnasio</a>
+                <a href="contacto.html" class="nav-link" id="link-contacto">Contacto</a>
+            </nav>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 8rem; padding-bottom: 2rem;">
+        <div class="container">
+            <h1 class="text-accent" style="margin-bottom: 1rem;">SÉ PARTE DE LA FORJA</h1>
+            <p style="color: var(--text-secondary); max-width: 700px; font-size: 1.2rem;">
+                ¿Tienes dudas sobre las tarifas, quieres solicitar tu día de prueba o agendar una cita con un entrenador? Escríbenos o visítanos directamente en el centro.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formulario e Información de Contacto -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 5rem;" id="contacto-seccion">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Formulario -->
+                <div class="contact-form-container" id="formulario-contacto">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo lo antes posible.');">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="form-nombre">Nombre *</label>
+                                <input type="text" id="form-nombre" class="form-control" placeholder="Escribe tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-apellidos">Apellidos *</label>
+                                <input type="text" id="form-apellidos" class="form-control" placeholder="Escribe tus apellidos" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="form-email">Email *</label>
+                                <input type="email" id="form-email" class="form-control" placeholder="nombre@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-telefono">Teléfono</label>
+                                <input type="tel" id="form-telefono" class="form-control" placeholder="Ej: 600123456">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-mensaje">Mensaje *</label>
+                            <textarea id="form-mensaje" class="form-control" placeholder="Escribe tu consulta detallada aquí..." required></textarea>
+                        </div>
+                        
+                        <label class="form-checkbox" for="form-privacy">
+                            <input type="checkbox" id="form-privacy" required>
+                            <span>Acepto la <a href="#" onclick="event.preventDefault(); alert('Política de privacidad simulada de ForgeGym: Tus datos serán tratados estrictamente para dar respuesta a tu solicitud.');">política de privacidad</a> del centro ForgeGym.</span>
+                        </label>
+                        
+                        <button type="submit" class="btn" id="form-submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de Contacto y Mapa -->
+                <div class="contact-info-container" id="detalles-contacto">
+                    <div class="contact-details">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-list">
+                            <!-- Dirección -->
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div class="contact-text">
+                                    <strong>Dirección</strong>
+                                    <span>Calle Industria 47, 28045 Madrid</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Teléfono -->
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div class="contact-text">
+                                    <strong>Teléfono</strong>
+                                    <span>+34 910 123 456</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <div class="contact-text">
+                                    <strong>Email de Atención</strong>
+                                    <span>info@forgegym.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mapa Embebido de OpenStreetMap -->
+                    <div class="map-container" id="mapa-openstreetmap">
+                        <iframe 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7056%2C40.3950%2C-3.6896%2C40.4030&amp;layer=mapnik&amp;marker=40.3990%2C-3.6976" 
+                            title="Ubicación de ForgeGym en Madrid a través de OpenStreetMap">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes (FAQ) -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2>Preguntas Frecuentes</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0;">
+                    Todo lo que necesitas saber antes de empezar a entrenar en ForgeGym.
+                </p>
+            </div>
+            
+            <div class="faq-container" id="faq-accordion-group">
+                <!-- Pregunta 1 -->
+                <div class="faq-item" id="faq-permanencia">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-content-1">
+                        <span class="faq-question">¿Existe un período mínimo de permanencia en las tarifas?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content" id="faq-content-1">
+                        <div class="faq-answer">
+                            No, en ForgeGym no exigimos permanencia obligatoria en nuestras tarifas mensuales estándar (Básico y Plus). Puedes darte de baja cuando lo desees notificándolo con al menos 5 días de antelación al siguiente cobro. Únicamente los planes anuales promocionales cuentan con compromiso de permanencia a cambio de un descuento aplicado.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="faq-item" id="faq-prueba">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-content-2">
+                        <span class="faq-question">¿Puedo acceder a un día de prueba gratuito antes de inscribirme?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content" id="faq-content-2">
+                        <div class="faq-answer">
+                            ¡Por supuesto! Queremos que experimentes la atmósfera real y la calidad de nuestro equipamiento antes de tomar una decisión. Puedes solicitar un pase de día gratuito completando el formulario superior e indicando "Pase de Prueba" en el mensaje, o acudiendo directamente a recepción con tu DNI.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="faq-item" id="faq-parking">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-content-3">
+                        <span class="faq-question">¿El gimnasio dispone de aparcamiento para los socios?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content" id="faq-content-3">
+                        <div class="faq-answer">
+                            Sí, contamos con un aparcamiento privado subterráneo gratuito para todos nuestros socios activos durante un máximo de 2 horas por sesión de entrenamiento. La entrada al garaje se localiza en la Calle Industria 45, justo en la puerta metálica anexa a la entrada principal del gimnasio.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="faq-item" id="faq-consignas">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-content-4">
+                        <span class="faq-question">¿Cómo funcionan las consignas y las taquillas de los vestuarios?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content" id="faq-content-4">
+                        <div class="faq-answer">
+                            Contamos con taquillas inteligentes y electrónicas gratuitas en todos los vestuarios. Funcionan mediante el chip de tu pulsera de socio o introduciendo un código numérico temporal de 4 dígitos que configuras tú mismo al cerrarla. No necesitas traer candado propio de casa.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="faq-item" id="faq-pagos">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-content-5">
+                        <span class="faq-question">¿Qué métodos de pago aceptáis para la suscripción?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content" id="faq-content-5">
+                        <div class="faq-answer">
+                            El método recomendado para el cobro mensual es la domiciliación bancaria. No obstante, en la recepción del centro también aceptamos el abono mediante tarjeta de débito/crédito y en efectivo. Asimismo, disponemos de una plataforma de pago segura en la intranet para cobros con tarjeta o Bizum.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="faq-item" id="faq-cancelacion">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-content-6">
+                        <span class="faq-question">¿Cómo puedo tramitar la cancelación de mi suscripción?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content" id="faq-content-6">
+                        <div class="faq-answer">
+                            Puedes tramitar la baja de tu cuota de forma ágil y presencial en la recepción del gimnasio, enviando una comunicación escrita con tus datos a la dirección de correo bajas@forgegym.com o rellenando el formulario específico en tu área privada de usuario. Recuerda tramitarla al menos 5 días laborables antes de tu próximo ciclo de cobro.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="grid footer-grid">
+                <!-- Columna Logo/Branding -->
+                <div class="footer-col" id="footer-col-brand">
+                    <div class="footer-logo">FORGE<span>GYM</span></div>
+                    <p>
+                        El templo de la fuerza y la disciplina en Madrid. Diseñado bajo una estética brutalista e industrial para maximizar tu enfoque.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">IG</a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">FB</a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+                
+                <!-- Columna Enlaces -->
+                <div class="footer-col" id="footer-col-links">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="gimnasio.html">El Gimnasio</a></li>
+                        <li><a href="contacto.html">Contacto y FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna Contacto -->
+                <div class="footer-col" id="footer-col-contact">
+                    <h4>Contacto</h4>
+                    <p>📍 Calle Industria 47, 28045 Madrid</p>
+                    <p>📞 +34 910 123 456</p>
+                    <p>✉️ info@forgegym.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ForgeGym. Todos los derechos reservados. Madrid, España.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts (Correct relative path) -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

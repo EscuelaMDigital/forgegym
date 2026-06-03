@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce las instalaciones de primer nivel de ForgeGym Madrid: 2.400 m², equipamiento de musculación Technogym, clases de CrossFit y Yoga, y nuestro equipo de entrenadores profesionales.">
+    <title>Instalaciones y Clases | ForgeGym Madrid</title>
+    <!-- CSS Stylesheet (Correct relative path) -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Fixed Navbar -->
+    <header class="header" id="main-header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo" id="nav-logo">
+                FORGE<span>GYM</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link" id="link-inicio">Inicio</a>
+                <a href="gimnasio.html" class="nav-link" id="link-gimnasio">El Gimnasio</a>
+                <a href="contacto.html" class="nav-link" id="link-contacto">Contacto</a>
+            </nav>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Header Section -->
+    <section class="section" style="padding-top: 8rem; padding-bottom: 2rem;">
+        <div class="container">
+            <h1 class="text-accent" style="margin-bottom: 1rem;">NUESTRO TEMPLO</h1>
+            <p style="color: var(--text-secondary); max-width: 700px; font-size: 1.2rem;">
+                Diseñado para quienes buscan el máximo rendimiento. Un espacio industrial con todo el equipamiento necesario para llevar tus entrenamientos al siguiente nivel.
+            </p>
+        </div>
+    </section>
+
+    <!-- Descripción del Centro (Estadísticas) -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 4rem;" id="datos-centro">
+        <div class="container">
+            <div class="grid info-grid">
+                <div class="info-text">
+                    <h2 style="margin-bottom: 1.5rem;">Forjado sobre bases sólidas</h2>
+                    <p>
+                        ForgeGym abrió sus puertas en el año 2018 con una misión clara: romper con el modelo de gimnasio comercial tradicional y crear un templo dedicado a la fuerza, la disciplina y la superación real.
+                    </p>
+                    <p>
+                        Ubicado en el corazón industrial de Madrid, nuestro edificio de tres plantas combina hormigón visto y acero con las tecnologías de entrenamiento más punteras del mercado. Aquí no hay distracciones, solo hierro y constancia.
+                    </p>
+                </div>
+                <div class="stats-grid" id="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-num">2.400</div>
+                        <div class="stat-label">Metros Cuadrados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">2018</div>
+                        <div class="stat-label">Año de Fundación</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">+1.200</div>
+                        <div class="stat-label">Socios Activos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">3</div>
+                        <div class="stat-label">Plantas Completas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instalaciones Detalladas -->
+    <section class="section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);" id="instalaciones">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>Las Instalaciones</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0;">
+                    Equipamiento de alta gama distribuido estratégicamente en tres plantas diseñadas por y para atletas.
+                </p>
+            </div>
+
+            <div class="grid installations-grid">
+                <!-- 1. Sala de musculación -->
+                <div class="installation-item" id="inst-musculacion">
+                    <div class="installation-img">
+                        <img src="../assets/images/instalacion_musculacion.png" alt="Sala de musculación de ForgeGym">
+                    </div>
+                    <div class="installation-desc">
+                        <h3>Sala de Musculación</h3>
+                        <p>
+                            Nuestra sala principal cuenta con más de 1.000 m² equipados en su totalidad por marcas líderes como Technogym y Life Fitness. Disponemos de 6 racks de peso libre, plataformas de halterofilia y poleas de última generación.
+                        </p>
+                        <div class="installation-features">
+                            <span class="installation-tag">Technogym</span>
+                            <span class="installation-tag">Life Fitness</span>
+                            <span class="installation-tag">Peso Libre</span>
+                            <span class="installation-tag">Halterofilia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Zona de cardio (Reverse) -->
+                <div class="installation-item reverse" id="inst-cardio">
+                    <div class="installation-img">
+                        <img src="../assets/images/instalacion_cardio.png" alt="Zona de cardio de ForgeGym">
+                    </div>
+                    <div class="installation-desc">
+                        <h3>Zona de Cardio</h3>
+                        <p>
+                            Olvídate de esperar. Más de 40 máquinas dedicadas a mejorar tu capacidad aeróbica. Incluye cintas de correr inteligentes con conectividad avanzada, elípticas, bicicletas de spinning de última generación y remos Concept2 profesionales.
+                        </p>
+                        <div class="installation-features">
+                            <span class="installation-tag">40 Máquinas</span>
+                            <span class="installation-tag">Concept2</span>
+                            <span class="installation-tag">Bicis de Spinning</span>
+                            <span class="installation-tag">Smart Screen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Sala de clases grupales -->
+                <div class="installation-item" id="inst-clases">
+                    <div class="installation-img">
+                        <img src="../assets/images/instalacion_clases.png" alt="Sala de actividades dirigidas de ForgeGym">
+                    </div>
+                    <div class="installation-desc">
+                        <h3>Sala de Clases Grupales</h3>
+                        <p>
+                            Un área diáfana de 200 m² con aforo óptimo para 30 personas. Cuenta con suelo técnico de alta absorción de impactos, climatización automatizada y un sistema de sonido de alta fidelidad que te sumergirá en la sesión.
+                        </p>
+                        <div class="installation-features">
+                            <span class="installation-tag">Aforo: 30 pers.</span>
+                            <span class="installation-tag">Suelo Técnico</span>
+                            <span class="installation-tag">Climatizado</span>
+                            <span class="installation-tag">Sonido Hi-Fi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Zona de estiramientos y movilidad (Reverse) -->
+                <div class="installation-item reverse" id="inst-movilidad">
+                    <div class="installation-img">
+                        <img src="../assets/images/instalacion_clases.png" alt="Área de estiramientos y movilidad de ForgeGym">
+                    </div>
+                    <div class="installation-desc">
+                        <h3>Estiramientos y Movilidad</h3>
+                        <p>
+                            Un espacio tranquilo y acondicionado para preparar tu cuerpo antes de entrenar o relajar las fibras tras la sesión. Equipada con espalderas de madera, bandas de resistencia, rodillos de espuma (foam rollers) y esterillas premium.
+                        </p>
+                        <div class="installation-features">
+                            <span class="installation-tag">Bandas Elásticas</span>
+                            <span class="installation-tag">Foam Rollers</span>
+                            <span class="installation-tag">Espalderas</span>
+                            <span class="installation-tag">Calentamiento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Vestuarios con sauna seca -->
+                <div class="installation-item" id="inst-sauna">
+                    <div class="installation-img">
+                        <img src="../assets/images/instalacion_sauna.png" alt="Sauna seca en vestuarios de ForgeGym">
+                    </div>
+                    <div class="installation-desc">
+                        <h3>Vestuarios y Sauna Seca</h3>
+                        <p>
+                            Vestuarios amplios y modernos equipados con duchas individuales y taquillas electrónicas. Disfruta de nuestra sauna seca finlandesa de madera de pino, idónea para relajar los músculos, eliminar toxinas y acelerar la recuperación.
+                        </p>
+                        <div class="installation-features">
+                            <span class="installation-tag">Sauna Seca</span>
+                            <span class="installation-tag">Taquillas Digitales</span>
+                            <span class="installation-tag">Duchas Individuales</span>
+                            <span class="installation-tag">Toalla Incluida</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clases Grupales Disponibles -->
+    <section class="section classes-section" id="clases-grupales">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>Clases Grupales</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0;">
+                    Sesiones guiadas por profesionales titulados que te motivarán a romper tus límites en grupo.
+                </p>
+            </div>
+
+            <div class="grid classes-grid">
+                <!-- 1. CrossFit -->
+                <div class="class-card" id="class-crossfit">
+                    <div class="class-header">
+                        <h3>CrossFit</h3>
+                        <span class="class-difficulty diff-high">Alta</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Entrenamiento funcional de alta intensidad que combina halterofilia, calistenia, gimnasia y resistencia cardiovascular pura.</p>
+                    </div>
+                    <div class="class-schedule">Lunes, Miércoles, Viernes</div>
+                </div>
+
+                <!-- 2. Spinning -->
+                <div class="class-card" id="class-spinning">
+                    <div class="class-header">
+                        <h3>Spinning</h3>
+                        <span class="class-difficulty diff-med">Media</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Ciclismo indoor con simulación de rutas de montaña y intervalos de velocidad al ritmo de música intensa para quemar calorías.</p>
+                    </div>
+                    <div class="class-schedule">Martes, Jueves, Sábados</div>
+                </div>
+
+                <!-- 3. Yoga -->
+                <div class="class-card" id="class-yoga">
+                    <div class="class-header">
+                        <h3>Yoga</h3>
+                        <span class="class-difficulty diff-low">Baja</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Búsqueda de la conexión entre mente y cuerpo a través de posturas de flexibilidad (asanas), respiración y meditación guiada.</p>
+                    </div>
+                    <div class="class-schedule">Lunes, Miércoles</div>
+                </div>
+
+                <!-- 4. Pilates -->
+                <div class="class-card" id="class-pilates">
+                    <div class="class-header">
+                        <h3>Pilates</h3>
+                        <span class="class-difficulty diff-low">Baja</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Ejercicios enfocados en fortalecer el núcleo corporal (core), corregir la postura, ganar elasticidad y alinear la columna.</p>
+                    </div>
+                    <div class="class-schedule">Martes, Jueves</div>
+                </div>
+
+                <!-- 5. Body Pump -->
+                <div class="class-card" id="class-bodypump">
+                    <div class="class-header">
+                        <h3>Body Pump</h3>
+                        <span class="class-difficulty diff-med">Media</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Clase coreografiada con barra y discos regulables que tonifica y define toda la musculatura corporal mediante repeticiones.</p>
+                    </div>
+                    <div class="class-schedule">Lunes, Miércoles, Jueves</div>
+                </div>
+
+                <!-- 6. Zumba -->
+                <div class="class-card" id="class-zumba">
+                    <div class="class-header">
+                        <h3>Zumba</h3>
+                        <span class="class-difficulty diff-low">Baja</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Entrenamiento cardiovascular divertido que fusiona pasos de baile latino y ritmos internacionales en una fiesta interactiva.</p>
+                    </div>
+                    <div class="class-schedule">Martes, Viernes</div>
+                </div>
+
+                <!-- 7. Boxing Fit -->
+                <div class="class-card" id="class-boxingfit">
+                    <div class="class-header">
+                        <h3>Boxing Fit</h3>
+                        <span class="class-difficulty diff-high">Alta</span>
+                    </div>
+                    <div class="class-body">
+                        <p>Entrenamiento cardiovascular basado en la técnica y combinaciones del boxeo sobre saco. Sin contacto, ideal para quemar grasas y desestresarse.</p>
+                    </div>
+                    <div class="class-schedule">Miércoles, Viernes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo de Entrenadores -->
+    <section class="section" id="entrenadores">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>El Equipo de Forja</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0;">
+                    Entrenadores certificados y con experiencia, comprometidos en guiarte y sacar lo mejor de ti en cada entrenamiento.
+                </p>
+            </div>
+
+            <div class="grid team-grid">
+                <!-- Entrenador 1 -->
+                <div class="team-card" id="trainer-marcos">
+                    <div class="team-img-placeholder">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Marcos Galiano</h3>
+                        <div class="team-specialty">Fuerza & Powerlifting</div>
+                        <p class="team-bio">
+                            Subcampeón de España en 2022. Convencido de que la técnica perfecta es el pilar de la fuerza duradera.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entrenador 2 -->
+                <div class="team-card" id="trainer-elena">
+                    <div class="team-img-placeholder">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Elena Rivas</h3>
+                        <div class="team-specialty">CrossFit & HIIT</div>
+                        <p class="team-bio">
+                            Ex-atleta nacional de gimnasia rítmica. Experta en entrenamientos metabólicos y superación de límites mentales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entrenador 3 -->
+                <div class="team-card" id="trainer-carlos">
+                    <div class="team-img-placeholder">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Carlos Varela</h3>
+                        <div class="team-specialty">Fisioterapia & Readaptación</div>
+                        <p class="team-bio">
+                            Especialista en movilidad articular y en readaptación funcional tras lesiones. Entrenar sin dolor es su lema.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entrenador 4 -->
+                <div class="team-card" id="trainer-sofia">
+                    <div class="team-img-placeholder">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sofía Núñez</h3>
+                        <div class="team-specialty">Yoga & Pilates</div>
+                        <p class="team-bio">
+                            Certificada en Mysore, India. Especializada en control postural, respiración pranayama y flexibilidad profunda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entrenador 5 -->
+                <div class="team-card" id="trainer-javier">
+                    <div class="team-img-placeholder">
+                        <div class="team-avatar"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Javier Ortiz</h3>
+                        <div class="team-specialty">CAFYD & Nutrición</div>
+                        <p class="team-bio">
+                            Asesor nutricional y de entrenamiento personal enfocado en recomposición corporal y estética industrial del fitness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="grid footer-grid">
+                <!-- Columna Logo/Branding -->
+                <div class="footer-col" id="footer-col-brand">
+                    <div class="footer-logo">FORGE<span>GYM</span></div>
+                    <p>
+                        El templo de la fuerza y la disciplina en Madrid. Diseñado bajo una estética brutalista e industrial para maximizar tu enfoque.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">IG</a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">FB</a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+                
+                <!-- Columna Enlaces -->
+                <div class="footer-col" id="footer-col-links">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="gimnasio.html">El Gimnasio</a></li>
+                        <li><a href="contacto.html">Contacto y FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna Contacto -->
+                <div class="footer-col" id="footer-col-contact">
+                    <h4>Contacto</h4>
+                    <p>📍 Calle Industria 47, 28045 Madrid</p>
+                    <p>📞 +34 910 123 456</p>
+                    <p>✉️ info@forgegym.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ForgeGym. Todos los derechos reservados. Madrid, España.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts (Correct relative path) -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
